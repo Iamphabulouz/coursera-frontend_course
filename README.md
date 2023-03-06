@@ -39,22 +39,3 @@ Follow the Step by Step instructions below:
 
 8. Add the text `I successfully created my first document` inside the `body` element. This displays on the webpage. 
 
-
-<br>
-
-
-
-## Final Step: Let's submit your code!
-Nice work! To complete this assessment:
-- Save your file through File -> Save 
-- Select "Submit Assignment" in your Lab toolbar. 
-
-Your code will be autograded and return feedback shortly on the "Grades" tab.  
-You can also see your score in your Programming Assignment "My Submission" tab.
-<br> <br> 
-
-### Tips
-
-* Ensure that the **DOCTYPE** is declared at the beginning of the file.
-* Remember that HTML documents have a specific structure.
-* Review the lessons *What is HTML?* and *HTML Documents.*
