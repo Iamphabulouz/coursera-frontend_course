@@ -1,60 +1,34 @@
-# Lab Instructions: Creating an HTML Document
+HTML (Hypertext Markup Language) is the standard language used for creating web pages. HTML uses a set of markup tags to define the structure and content of a web page. One of the most important tags in HTML is the <form> tag, which is used to create a form on a web page.
 
-In this exercise you will you will practice creating a simple HTML document.<br><br>
+A form is a section of a web page that allows users to input information and submit it to a server for processing. Forms are commonly used for a variety of purposes, such as:
 
-> ### **Tips: Before you Begin**
-> #### **To view your code and instructions side-by-side**, select the following in your VSCode toolbar:
-> - View -> Editor Layout -> Two Columns
-> - To view this file in Preview mode, right click on this README.md file and `Open Preview`
-> - Select your code file in the code tree, which will open it up in a new VSCode tab.
-> - Drag your assessment code files over to the second column. 
-> - Great work! You can now see instructions and code at the same time. 
- <br><br> 
- 
-<br>
+Contact forms
+Login forms
+Registration forms
+Surveys
+Feedback forms
+Search forms
+The <form> tag has several attributes that are used to define the characteristics of the form, such as the method of data submission, the URL of the server script that will process the data, and the type of encoding used for the data.
 
-## Task 1: Create a valid HTML document that displays a piece of text.
+Here is an example of a simple HTML form:
 
-Objectives
-- Add the **DOCTYPE**.
-- Add the HTML, head and body elements.
-- Add the title element.
-- Add the text to the body element.
+<form method="post" action="/submit-form">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
 
-Follow the Step by Step instructions below:
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
 
-1. Open the `index.html` file.
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" required></textarea>
 
-2. Type `<!DOCTYPE html>` on the first line.
+  <input type="submit" value="Submit">
+</form>
+In this example, the form has three fields: Name, Email, and Message. Each field has a label to identify it and an input element to allow the user to input data. The required attribute on each input element specifies that the field is mandatory and must be filled in before the form can be submitted. The method attribute on the <form> tag specifies the HTTP method to be used for submitting the form data, and the action attribute specifies the URL of the server script that will process the form data.
 
-3. Create your `html` element on the next line. This will be the root element of the document.
-
-4. Add the `head` element inside the `html` element. The head element contains data about the HTML document that does not display in the web browser.  
-
-5. Add the `title` element inside the `head` element.
-
-6. Add the text `My First HTML Document` inside the `title` element. The content of the `title` element is the text that will be displayed in the web browser tab.   
-
-7. Close the `head` tag and add the `body` element. The ``body element contains all displayable content of the webpage.
-
-8. Add the text `I successfully created my first document` inside the `body` element. This displays on the webpage. 
-
-
-<br>
+When the user clicks the "Submit" button, the data entered into the form is sent to the server specified in the action attribute. The server script can then process the data and respond accordingly.
 
 
 
-## Final Step: Let's submit your code!
-Nice work! To complete this assessment:
-- Save your file through File -> Save 
-- Select "Submit Assignment" in your Lab toolbar. 
 
-Your code will be autograded and return feedback shortly on the "Grades" tab.  
-You can also see your score in your Programming Assignment "My Submission" tab.
-<br> <br> 
 
-### Tips
-
-* Ensure that the **DOCTYPE** is declared at the beginning of the file.
-* Remember that HTML documents have a specific structure.
-* Review the lessons *What is HTML?* and *HTML Documents.*
